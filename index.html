@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+        }
+
+        .header h1 {
+        font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+        float: left;
+        width: 25%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+        float: left;
+        width: 75%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Footer */
+        .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+        }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <nav class="topnav" id="navbar">
+        <header>
+          General Principles
+        </header>
+        <a class="nav-link" href="#Call_Types">
+          Call Types</a>
+        <a class="nav-link" href="#Still_Alarm">
+          Still Alarm</a>
+        <a class="nav-link" href="#Upgrading_to_Code_3">
+          Upgrading to Code 3</a>
+        <a class="nav-link" href="#Skills">
+          Skills</a>
+        <a class="nav-link" href="#Vitals">
+          Vitals</a>
+      </nav>
+    </div>
+</div>
+  <div class="rightcolumn"><div class="header">
+      <h1>EMT Standard Operating Procedures</h1>
+  </div>
+    <main id="main-doc">
+
+      <div class="card">
+          <section class="main-section" id="Call_Types">
+              <header>Call Types</header>
+              <code>Mechanical/syncopal</code>
+              <ol>
+                  <li>KO/Witness</li>
+                  <li>Time</li>
+                  <li>Height of fall</li>
+                  <li>Blood thinners</li>
+                  <li>Pupils</li>
+              </ol>
+              <p>Take BP while pt is sitting up and down</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </section>
+      </div>
+      <div class="card">
+          <section class="main-section" id="Still_Alarm">
+              <header>Still Alarm</header>
+              <code>Type</code>
+              <p>If en route to ER call you cannot stop for still alarm of if you have a pt on board, radio into dispatch to notify of incident(see radio dispatch list above)</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </section>
+      </div>
+  <div class="card">
+      <section class="main-section" id="Upgrading_to_Code_3">
+          <header>Upgrading to Code 3</header>
+          <code>If running Fire get department name and engine number</code>
+          <p>Remember that going code 3 doesn't always save that much time and can cause more harm to the patient.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </section>
+  </div>
+    <div class="card">
+      <section class="main-section" id="Skills">
+          <header>Skills</header>
+          <code>EMT Basic</code>
+          <p>Suctioning</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </section>
+  </div>
+    <div class="card">
+          <section class="main-section" id="Vitals">
+              <header>Vitals</header>
+              <code>Stable baseline</code>
+              <p>Adult 18+	12-20	60-100	100-140	Avg 80</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </section>
+      </div>
+  </main>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
